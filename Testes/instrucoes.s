@@ -7,3 +7,10 @@ foo:
     movq    $0x0102030405060708, %rax
 #    movq    $externo, %rax
     movq    $interno, %rax
+    movl    $0, -32(%rbp)
+    movsd   .LC0(%rip),%xmm0
+
+
+.LC0:
+    .double 1.0
+    

@@ -1,7 +1,7 @@
 /*
 int calculaIndice(int valor); 
 double trata(int u); 
- 
+
 float foo (int v[], int n) {  
    double m = 1.0; 
    int i; 
@@ -56,26 +56,27 @@ WHILE:
    movl  %ebx, %edi
    call  calculaIndice
 
-   movq  -16(%rbp), %rdi
-
 #      m *= trata(v[indice]); 
    imulq $4, %rax
-   addq  %rdi, %rax
-   movq  %rdi, -16(%rbp)
+   addq  -16(%rbp), %rax
 
    movl  (%rax), %edi
    call  trata
 
-   movsd -24(%rbp), %xmm1
-   mulsd %xmm1, %xmm0
+   movq  -16(%rbp), %rdi
+   mulsd -24(%rbp), %xmm0
    movl  -28(%rbp), %esi
+
 #      i++
    incl  %ebx
+
 #   } 
    jmp   WHILE
 FIM_WHILE:
+
 #   return m;
    cvtsd2ss %xmm0, %xmm0
+
 #}
    movq  -8(%rbp), %rbx
 
