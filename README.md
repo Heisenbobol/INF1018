@@ -7,6 +7,7 @@
 ![Open Issues](https://img.shields.io/github/issues/AlexandreMeslin/INF1018)
 ![Open PRs](https://img.shields.io/github/issues-pr/AlexandreMeslin/INF1018)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-darkmagenta.svg)
+![GitHub Created At](https://img.shields.io/github/created-at/AlexandreMeslin/INF1018)
 
 ![Assembly](https://img.shields.io/badge/language-Assembly-red.svg)
 ![C](https://img.shields.io/badge/language-C-yellow.svg)
@@ -21,3 +22,6 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/AlexandreMeslin/INF1018?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/AlexandreMeslin/INF1018?style=social)
+![GitHub followers](https://img.shields.io/github/followers/AlexandreMeslin)
+![GitHub User's stars](https://img.shields.io/github/stars/AlexandreMeslin)
+![GitHub watchers](https://img.shields.io/github/watchers/AlexandreMeslin/INF1018)
