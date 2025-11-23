@@ -22,3 +22,6 @@
     movl    %r10d, -12(%rbp)
     movl    %r10d, -8(%rbp)
     movl    %r10d, -4(%rbp)
+
+    movl    %edi, %eax
+    movl    %ecx, %eax
