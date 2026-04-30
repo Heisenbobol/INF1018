@@ -26,7 +26,7 @@ map2:
     movq    %rsp, %rbp  # cria a base do RA da chamada
     subq    $32, %rsp  # abre espaço para o RA da chamada
 
-    # salvar registradores callee-saved USADOS!!!
+    # salvar registradores callee-saved USADOS pela map2!!!
     movq    %rbx, -8(%rbp)
 
 #  int i;
@@ -51,7 +51,8 @@ WHILE:
     addq    %rdi, %rbx
 
 #param1 = *paux
-    # salva os registradores caller-saved usados
+    # salva os registradores caller-saved usados pela map2
+    # porque a função f vai modificar os valores desses registradores
     movq    %rdi, -16(%rbp)
     movq    %rsi, -24(%rbp)
     movl    %edx, -28(%rbp)
